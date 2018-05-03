@@ -8,6 +8,9 @@ using namespace std;
 */
 int foo(int n,int r)
 {
+     int a = 10;
+     a = a + n;
+     std::cout << a << std::endl;
      if(n==r) return 1;
      if(r==1) return n;
      return foo(n-1,r) + foo(n-1,r-1);
